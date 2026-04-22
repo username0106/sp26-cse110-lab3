@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* ----------------------------------------------------------------------------------------------------
+   GENERAL CSS TOPICS
+   ----------------------------------------------------------------------------------------------------*/
+
+:root {
+    --main-color: #1a2e4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: var(--main-color, navy);         
+    background-color: rgb(245, 245, 245);  
+}
+
+header {
+    background-color: #cce5ff;
+    position: sticky;                     
+    top: 0;
+}
+
+footer {
+    background-color: hsl(210, 30%, 95%);
+    padding-top: 1rem;                      
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+h1 {
+    color: rgba(0, 0, 100, 0.85);
+    font-size: 24px;                       
+    text-align: center;                     
+}
+
+h2 {
+    color: hsla(210, 60%, 30%, 1);
+}
+
+h3 {
+    color: teal;
+    letter-spacing: 1pt;                   
+}
+
+strong {
+    color: color(srgb 0.1 0.3 0.6);
+}
+
+em {
+    color: color-mix(in srgb, blue 40%, white);
+}
+
+main {
+    background-color: #ffffff;
+    max-width: 960px;                    
+    min-width: 280px;                       
+    margin: 0 auto;                        
+    width: 90%;                            
+}
+
+input[type="text"] {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+section {
+    border: 1px solid #cccccc;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0 10px 0;
+    height: auto;                           
+}
+
+p {
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: underline;            
+    color: #0055aa;                        
+}
+
+img {
+    display: block;                      
+}
+
+span {
+    display: inline;                    
+}
+
+button {
+    display: inline-block;             
+}
+
+.hidden {
+    display: none;             
+}
+
+.card-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card {
+    position: relative;                   
+}
+
+.print-spacer {
+    width: 2cm;
+}
+
+a:hover {
+    background-color: #e0eeff;
+}
+
+a:active {
+    background-color: #aaccff;
+}
+
+nav {
+    display: flex;                          
+    flex-direction: row;               
+    justify-content: center;               
+    gap: 1em;                              
+    flex-wrap: wrap;                        
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;            
+    gap: 8px;                              
+    grid-auto-rows: auto;                  
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 8px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------
+   CSS SELECTORS
+   -------------------------------------------------------------------------------------------------------- */
+
+.highlight {
+    background-color: lightyellow;
+}
+
+#attendance {
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+}
+
+[type="date"] {
+    border: 1px solid #999999;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+header h1 {
+    text-decoration: none;
+}
+
+main > section {
+    margin-bottom: 16px;
+}
+
+h2 ~ p {
+    font-style: italic;
+}
+
+h2 + p {
+    font-weight: bold;
+}
+
+section.card {
+    outline: 2px dashed #aaaaaa;
+}
+
+section:has(form) {
+    background-color: #f0f8ff;
+}
+
+nav {
+    & a {
+        font-size: 0.95rem;
+    }
+}

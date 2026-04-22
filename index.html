@@ -2,40 +2,50 @@
 <html lang="en">
     <head>
         <title>Meeting Notes</title>
-        <meta name = "meeting notes" content="Meeting notes for brainstorming session">
+        <meta name="meeting notes" content="Meeting notes for brainstorming session">
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" type="image/png">
+
+        <!-- External CSS (preferred method) -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Internal CSS with <style> -->
+        <style>
+            legend {
+                font-weight: bold;
+            }
+        </style>
     </head>
-    
+
     <body>
         <header>
             <h1>Pomodoro Timer First Brainstorm</h1>
             <h2>Brainstorming Session</h2>
             <h3>Date: April 13, 2026</h3>
-
-                <nav>
-                    <a href="#attendance">Attendance</a> |
-                    <a href="#agenda">Agenda</a> |
-                    <a href="#media">Media</a> |
-                    <a href="#form">Form</a>
-                </nav>
-                <hr>
-
+            <nav>
+                <a href="#attendance">Attendance</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#media">Media</a>
+                <a href="#form">Form</a>
+            </nav>
+            <hr>
         </header>
 
         <main>
-            <section id="attendance">
+            <section id="attendance" class="highlight">
+                <span class="badge">★</span>
                 <h2>Attendance</h2>
                 <ul>
                     <li>Alice</li>
                     <li>Bob</li>
                     <li>Charlie</li>
                 </ul>
-
             </section>
+
             <section id="agenda">
-                    <h2>Meeting Agenda</h2>
-                    <P>This meeting is <strong>important</strong> as it gives <b>updates</b> regarding our base on the moon called <i>The Circle</i>. <br>Our base was blown up by the <em>Germans</em></P>
-                
+                <!-- Inline CSS example -->
+                <h2 style="letter-spacing: 2px;">Meeting Agenda</h2>
+                <p>This meeting is <strong>important</strong> as it gives <b>updates</b> regarding our base on the moon called <i>The Circle</i>. <br>Our base was blown up by the <em>Germans</em></p>
+
                 <div>
                     <p>Topics discussed:</p>
                     <ul>
@@ -53,13 +63,14 @@
                     </ol>
                 </div>
 
-                <span>This is an example of a spam</span>
+                <span>This is an example of a span</span>
             </section>
+
             <section>
                 <h2>Extra Notes</h2>
                 <details>
                     <summary>Click to expand</summary>
-                    <p>Additional discussion about feature we should build.</p>
+                    <p>Additional discussion about features we should build.</p>
                 </details>
             </section>
 
@@ -81,7 +92,7 @@
 
             <section id="media">
                 <h2>Media</h2>
-                
+
                 <h3>Whiteboard</h3>
                 <img src="https://www.insights.cgi.com/hs-fs/hubfs/blog-files/blog_images/Mark_Drawing3/Summa%20Whiteboard%20Concept%20Map.jpg?width=1024&name=Summa%20Whiteboard%20Concept%20Map.jpg" alt="Whiteboard" width="1000">
 
@@ -101,10 +112,9 @@
 
             <section id="form">
                 <h2>Feedback Form</h2>
-
                 <form>
                     <fieldset>
-                        <legend>Submit Feedback</legend>    
+                        <legend>Submit Feedback</legend>
 
                         Name:<br>
                         <input type="text"><br><br>
@@ -141,11 +151,14 @@
                 </form>
             </section>
 
+            <!-- Used for display:none and cm unit requirement -->
+            <div class="hidden"></div>
+
         </main>
 
         <footer>
             <hr>
-            <p>If there are any additional questions call Bob (935 182 9367) for Clarification </p>
+            <p>If there are any additional questions call Bob (935 182 9367) for Clarification</p>
         </footer>
     </body>
 </html>
