@@ -1,7 +1,7 @@
 # Daily Update Notes
 
 **Date:** YYYY-MM-DD  
-**Task Progress%:** #  
+**Task Progress%:**   
 **Team Lead:**  
 
 ---
